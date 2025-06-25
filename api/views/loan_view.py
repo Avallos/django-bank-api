@@ -11,6 +11,5 @@ class LoanViewSet(viewsets.ModelViewSet):
         return Loan.objects.filter(user=self.request.user)
 
     def perform_create(self, serializer):
-        print(self.request.META.get("REMOTE_ADDR"))
         ip = self.request.META.get("REMOTE_ADDR")
         serializer.save(user=self.request.user, ip_address=ip)
