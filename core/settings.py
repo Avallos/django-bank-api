@@ -20,9 +20,9 @@ SECRET_KEY = os.getenv("SECRET_KEY")
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["*"]  # ATENÇÃO: ["*"] não deve ser usado em produção, está assim apenas para demonstração.
-CORS_ALLOW_ALL_ORIGINS = True # ATENÇÃO: ["*"] não deve ser usado em produção, está assim apenas para demonstração.
-CORS_ALLOW_CREDENTIALS = True # ATENÇÃO: ["*"] não deve ser usado em produção, está assim apenas para demonstração.
+ALLOWED_HOSTS = ["*"]  # ATENÇÃO: não deve ser usado em produção, está assim apenas para demonstração.
+CORS_ALLOW_ALL_ORIGINS = True # ATENÇÃO: não deve ser usado em produção, está assim apenas para demonstração.
+CORS_ALLOW_CREDENTIALS = True # ATENÇÃO: não deve ser usado em produção, está assim apenas para demonstração.
 CORS_ALLOW_HEADERS = list(default_headers) + [
     'Authorization',
     'ngrok-skip-browser-warning',
